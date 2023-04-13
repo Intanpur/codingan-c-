@@ -65,3 +65,52 @@ using namespace std;
  	
  	cout<<Mhs.nama << " "<<Mhs.npm;
  }
+ 
+ //MEMBUAT PROGRAM DENGAN SETTER DAN GETTER
+/*
+class PersegiPanjang{
+	private:
+		int panjang;
+		int lebar;
+	
+	public:
+		void setPanjang(int panjang){
+			this -> panjang = panjang;
+		}
+		
+		void setLebar(int lebar){
+			this -> lebar = lebar;
+		}
+		
+		int getPanjang(){
+			return panjang;
+		}
+		
+		int getLebar(){
+			return lebar;
+		}
+		
+		int Luas(){
+			return panjang * lebar;
+		}
+		};
+
+int main(){
+	PersegiPanjang psg;
+	
+	psg.setLebar(10);
+	psg.setPanjang(10);
+	
+	cout << "Panjang : " << psg.getPanjang() << endl;
+	cout << "Lebar   : " << psg.getLebar() << endl;
+	cout << "Luas    : " << psg.Luas() << endl;
+
+}
+/*
+SETTER biasanya menggunakan void/prosedur dan memiliki satu parameter didalamnya.
+lalu fungsi main akan memanggil fungsi setter tsb untuk diberikan nilai.
+
+fungsi GETTER selalu sama dengan tipe data artibut yang dituju. kita memiliki 
+artibut dgn tipe data string, maka fungsi getter akan bertipe string juga.
+*/
+
