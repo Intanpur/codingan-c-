@@ -53,3 +53,15 @@ public:
 //Diatas adalah sepenggal program yang mencontohkan bagaimana cara mendirikan dan mendefinisikan sebuah class dengan nama class mahasiswa. Di dalam class pada baris pertama isi dari class terdapat akses specifier public yang berarti semua anggota di bawah label itu akan bersifat bebas untuk diakses dari dalam maupun dari luar class.
 
 Baris kedua sampai empat definisi dari class terdapat tiga variabel nim, nama dan nilai dengan tipe data int, string dan float yang merupakan member variable dari class tersebut. Dan pada baris berikutnya terdapat anggota yang berupa member function atau biasa disebut method, yang mempunyai definisi dengan tugas untuk mencetak nilai dari anggota variabel di atasnya.
+#include<iostream>
+using namespace std;
+ struct Mahasiswa{
+ string nama,npm;	
+ };
+ int main(){
+ 	Mahasiswa Mhs;
+ 	cin>>Mhs.nama;
+ 	cin>>Mhs.npm;
+ 	
+ 	cout<<Mhs.nama << " "<<Mhs.npm;
+ }
