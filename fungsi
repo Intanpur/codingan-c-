@@ -1,0 +1,87 @@
+// FUNCTION
+
+/*Function dalam bahasa pemrograman C++ adalah sebuah blok kode program yang ditulis
+untuk melakukan suatu tindakan tertentu atau mengembalikan nilai tertentu ketika
+dipanggil dari program utama atau dari fungsi lainnya. Function juga dapat menerima
+parameter sebagai input, sehingga memungkinkan kita untuk memasukkan nilai atau
+data ke dalam function untuk diolah atau diproses.*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// // deklarasi fungsi dengan parameter
+// int tambah(int a, int b)
+// {
+//     return a + b;
+// }
+
+// int main()
+// {
+//     int x = 5, y = 7, hasil;
+
+//     // Memanggil fungsi tambah dan menyimpan hasilnya ke dalam variabel hasil
+//     hasil = tambah(x, y);
+
+//     // Menampilkan hasil
+//     cout << "Hasil penjumlahan " << x << " dan " << y << " adalah " << hasil << endl;
+//     return 0;
+// }
+
+//========================================================
+
+// // tipe data pengembalian integer
+// int tambah(int a, int b)
+// {
+//     // a dan b sbg parameter
+//     int hasil = a + b; // menghitung hasil penjumlahan
+//     return hasil;      // mengembalikan hasil penjumlaahan
+// }
+
+//========================================================
+
+// // prosedir dinamakan "tampilkan_nama"
+// void tampilkan_nama(string nama)
+// {
+//     cout << "Nama saya adalah " << nama << endl;
+//     // prosedur hanya menampilkan pesan, tanpa mengembalikan nilai
+// }
+
+//========================================================
+
+// // program function luas lingkaran
+// double luasLingkaran(double r)
+// {
+//     double pi = M_PI;
+//     return pi * r * r;
+// }
+
+// int main()
+// {
+//     double r;
+//     cin >> r;
+//     cout << "Luas Lingkaran: " << luasLingkaran(r);
+
+//     return 0;
+// }
+
+//=======================================================
+
+// program rpoedur absen
+void absen(string name, int npm)
+{
+    cout << name << "_" << npm;
+}
+
+int main()
+{
+    string name;
+    int npm;
+
+    getline(cin, name);
+    cin >> npm;
+
+    absen(name, npm);
+
+    return 0;
+}
