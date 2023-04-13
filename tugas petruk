@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+// Program Mencetak Bilangan Terbesar (NPM Ganjil)
+
+int main()
+{
+    int bil1 = 2, bil2 = 1;
+
+    if (bil1 > bil2)
+    {
+        cout << "Bilangan terbesar adalah " << bil1 << endl;
+    }
+    else
+    {
+        cout << "Bilangan terbesar adalah " << bil2 << endl;
+    }
+
+    return 0;
+}
+
+// Program Mengalikan Digit ke 10 Sebanyak Digit ke 9 NPM (NPM Ganjil; 2257051021)
+#include <iostream>
+using namespace std;
+int mengalikan(int base, int exponent)
+{
+    if (exponent == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return base * mengalikan(base, exponent - 1);
+    }
+}
+
+int main()
+{
+    int base = 1;
+    int exponent = 2;
+
+    int hasil = mengalikan(base, exponent);
+    cout << base << " pangkat " << exponent << " adalah " << hasil << endl;
+
+    return 0;
+}
+
+//program mencetak isi pointer dan alamatnya
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x = 21;
+    int *ptr = &x;
+
+    cout << "Nilai yang disimpan pointer adalah  " << *ptr << " pada alamat " << ptr << std::endl;
+    return 0;
+}
