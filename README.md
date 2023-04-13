@@ -4,6 +4,8 @@ dipanggil dari program utama atau dari fungsi lainnya. Function juga dapat mener
 parameter sebagai input, sehingga memungkinkan kita untuk memasukkan nilai atau
 data ke dalam function untuk diolah atau diproses.
 //codingan mengenai gabungan fungsi pointer cstring dan class
+
+
 #include <iostream>
 #include <cstring>
 
